@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--- favicon link --->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- custom css link --->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Contact form</title>
+</head>
+
+<body>
+
+  <!-- main container --->
+
+  <div class="main-container">
+    <div class="form-wrapper margin-inline-auto">
+      <h1 class="form__title">
+        Contact Us
+      </h1>
+
+      <form class="form grid" action="#" style="--gap:15px;" novalidate>
+        <div class="wrapper grid" style="--gap:15px;">
+          <div class="input__wrapper grid" style="gap:8px;">
+            <label class="input__label" for="first-name">
+              First Name
+            </label>
+
+            <input type="text" class="form__input" id="first-name">
+            <span class="error-span" data-first-name-error data-error-span>
+              This field is required
+            </span>
+
+          </div>
+
+          <div class="input__wrapper grid" style="gap:8px;">
+            <label class="input__label" for="last-name">
+              Last Name
+            </label>
+
+            <input type="text" class="form__input" id="last-name">
+            <span class="error-span" data-last-name-error data-error-span>
+              This field is required
+            </span>
+
+          </div>
+        </div>
+        <div class="wrapper grid">
+          <div class="input__wrapper grid" style="gap:8px;">
+            <label class="input__label" for="email-address">
+              Email Address
+            </label>
+
+            <input type="email" class="form__input" id="email-address">
+            <span class="error-span" data-first-email-error data-error-span>
+              This field is required
+            </span>
+
+          </div>
+
+        </div>
+        <div class="query-wrapper grid" style="--gap:8px;">
+
+          <label class="input__label">
+            Query Type
+          </label>
+
+          <div class="wrapper grid" style="--gap:15px;">
+            <div class="query__wrapper__wrapper grid" style="
+              --gap:6px;">
+              <div>
+                <div class="form__input query__input__wrapper flex align-items-center">
+                  <div class="radio-wrapper">
+                    <input type="radio" id="general-radio" name="enquiry">
+                  </div>
+                  <label class="query__label" for="general-radio">General Enquiry</label>
+                </div>
+              </div>
+              <span class="error-span" data-error-span data-general-query> Please select a query type</span>
+            </div>
+
+            <div class="query__wrapper__wrapper grid" style="--gap:6px;">
+              <div>
+                <div class="form__input query__input__wrapper flex align-items-center">
+                  <div class="radio-wrapper">
+                    <input type="radio" id="support-radio" name="enquiry">
+                  </div>
+                  <label class="query__label" for="support-radio"> Support Request</label>
+                </div>
+              </div>
+              <span class="error-span" data-error-span data-support-query-error> Please select a query type</span>
+            </div>
+
+          </div>
+        </div>
+        <div class="wrapper grid message-wrapper">
+          <div class="input__wrapper grid" style="--gap:8px;">
+            <label class="input__label" for="message">
+              Message
+            </label>
+
+            <textarea id="message" rows="12" class="message__textarea">
+
+            </textarea>
+
+            <span class="error-span" data-message-error data-error-span>
+              This field is required
+            </span>
+          </div>
+        </div>
+
+      </form>
+    </div>
+</body>
+
+</html>
